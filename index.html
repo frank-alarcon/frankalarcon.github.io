@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frank Alarcón | Contato Profissional</title>
+    <style>
+        :root {
+            --bg-color: #fcfcfc;
+            --text-color: #2c2c2c;
+            --muted-color: #666666;
+            --border-color: #e5e5e5;
+            --accent-color: #1a1a1a;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 4rem 1.5rem;
+        }
+
+        header {
+            margin-bottom: 3rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 2rem;
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            margin: 0 0 0.5rem 0;
+            color: var(--accent-color);
+        }
+
+        .subtitle {
+            font-size: 1rem;
+            color: var(--muted-color);
+            font-weight: 400;
+            margin: 0;
+        }
+
+        main {
+            margin-bottom: 3rem;
+        }
+
+        p {
+            margin-bottom: 1.5rem;
+            text-align: justify;
+        }
+
+        .section-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--accent-color);
+            letter-spacing: -0.01em;
+        }
+
+        ul.links-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        ul.links-list li {
+            margin-bottom: 0.75rem;
+        }
+
+        ul.links-list a {
+            color: var(--accent-color);
+            text-decoration: none;
+            border-bottom: 1px dotted var(--muted-color);
+            transition: border-color 0.2s ease;
+        }
+
+        ul.links-list a:hover {
+            border-bottom: 1px solid var(--accent-color);
+        }
+
+        footer {
+            border-top: 1px solid var(--border-color);
+            padding-top: 1.5rem;
+            font-size: 0.85rem;
+            color: var(--muted-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .contact-email {
+            font-weight: 500;
+            color: var(--accent-color);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Frank Alarcón</h1>
+        <p class="subtitle">Pesquisador · Biólogo · Filósofo · Doutor em Bioética</p>
+    </header>
+
+    <main>
+        <p>
+            Pesquisador Sênior no Instituto Nacional da Propriedade Industrial (INPI) e ponto focal para cooperação em propriedade intelectual no âmbito do BRICS. Doutor em Bioética, Ética Aplicada e Saúde Pública pela Universidade Federal Fluminense (UFF).
+        </p>
+
+        <p>
+            Sua trajetória acadêmica e profissional articula a rigorosa análise de políticas públicas, a bioética ambiental e a defesa dos direitos dos animais, unindo ciência, filosofia e salvaguarda ecológica.
+        </p>
+
+        <div class="section-title">Canais & Contato Profissional</div>
+        <ul class="links-list">
+            <li>E-mail: <span class="contact-email">frank.alarcon@gmail.com</span></li>
+            <li>LinkedIn: <a href="https://linkedin.com" target="_blank" rel="noopener">Perfil Profissional</a></li>
+            <li>Instagram: <a href="https://instagram.com/frankalarcon_phd" target="_blank" rel="noopener">@frankalarcon_phd</a></li>
+        </ul>
+    </main>
+
+    <footer>
+        <span>&copy; <span id="year"></span> Frank Alarcón</span>
+        <span>www.frankalarcon.com.br</span>
+    </footer>
+
+    <script>
+        // Atualiza o ano automaticamente no rodapé
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>
